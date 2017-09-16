@@ -14,11 +14,15 @@
         <div class="col-lg-4 co-xs-12">
           <div class="panel">
             <div class="panel-body">
-              <div class="input-group">
-      <span class="input-group-btn">
-        <button class="btn btn-default" type="button">Go!</button>
-      </span>
-                <input type="text" class="form-control" placeholder="Search for...">
+              <div class="form-group inout-fix input-with-icon-fix">
+                <label>جستجو : </label>
+                <!--<input type="text"-->
+                <!--class="form-control"-->
+                <!--maxlength="25"-->
+                <!--placeholder="جستجو در کالاها"-->
+                <!--[(ngModel)]="searchproductItem"-->
+                <!--name="productGroupListSearch"-->
+                <!--&gt;-->
               </div><!-- /input-group -->
             </div>
           </div>
@@ -37,143 +41,47 @@
              *ngFor="let item of obj">
           <div class="panel panel-default">
             <div class="panel-heading" style="text-align: center">
-              <a>{{item.groupname}}</a>
+              <a>{{item.productname}}</a>
             </div>
             <div class="panel-body">
-              <div *ngFor="let productinfo of item.SubgroupC">
-                <p>
-                  <img src="{{imagUrl}}" alt="">
-                </p>
-                <p>
-                  نام محصول : {{productinfo.name}}
-                </p>
-                <hr>
-                <p>
-                  مدل : {{productinfo.modle}}
-                </p>
-                <hr>
-                <p>
-                  رنگ : {{productinfo.Color}}
-                </p>
-                <hr>
-                <p>
-                  قیمت: {{productinfo.price}}
-                </p>
-                <hr>
-                <p>
-                  تخفیف: {{productinfo.discount}}
-                </p>
-                <hr>
-                <p>
-                  قیمت برای شما: {{productinfo.priceforyou}}
-                </p>
-                <hr>
-                <p>
-                  گارانتی: {{productinfo.Warranty}}
-                </p>
-                <hr>
-                <p>
-                  مدت زمان گارانتی: {{productinfo.Warrantyterms}}
-                </p>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <button class="btn btn-success center-block">افزودن به سبد خرید</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 co-xs-12"
-             *ngFor="let item of obj">
-          <div class="panel panel-default">
-            <div class="panel-heading" style="text-align: center">
-              <a>{{item.groupname}}</a>
-            </div>
-            <div class="panel-body">
-              <div *ngFor="let productinfo of item.SubgroupB">
-                <p>
-                  <img src="{{imagUrl}}" alt="">
-                </p>
-                <p>
-                  نام محصول : {{productinfo.name}}
-                </p>
-                <hr>
-                <p>
-                  مدل : {{productinfo.modle}}
-                </p>
-                <hr>
-                <p>
-                  رنگ : {{productinfo.Color}}
-                </p>
-                <hr>
-                <p>
-                  قیمت: {{productinfo.price}}
-                </p>
-                <hr>
-                <p>
-                  تخفیف: {{productinfo.discount}}
-                </p>
-                <hr>
-                <p>
-                  قیمت برای شما: {{productinfo.priceforyou}}
-                </p>
-                <hr>
-                <p>
-                  گارانتی: {{productinfo.Warranty}}
-                </p>
-                <hr>
-                <p>
-                  مدت زمان گارانتی: {{productinfo.Warrantyterms}}
-                </p>
-              </div>
-            </div>
-            <div class="panel-footer">
-              <button class="btn btn-success center-block">افزودن به سبد خرید</button>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 co-xs-12"
-             *ngFor="let item of obj">
-          <div class="panel panel-default">
-            <div class="panel-heading" style="text-align: center">
-              <a>{{item.groupname}}</a>
-            </div>
-            <div class="panel-body">
-              <div *ngFor="let productinfo of item.SubgroupA">
-                <p>
-                  <img src="{{imagUrl}}" alt="">
-                </p>
-                <p>
-                  نام محصول : {{productinfo.name}}
-                </p>
-                <hr>
-                <p>
-                  مدل : {{productinfo.modle}}
-                </p>
-                <hr>
-                <p>
-                  رنگ : {{productinfo.Color}}
-                </p>
-                <hr>
-                <p>
-                  قیمت: {{productinfo.price}}
-                </p>
-                <hr>
-                <p>
-                  تخفیف: {{productinfo.discount}}
-                </p>
-                <hr>
-                <p>
-                  قیمت برای شما: {{productinfo.priceforyou}}
-                </p>
-                <hr>
-                <p>
-                  گارانتی: {{productinfo.Warranty}}
-                </p>
-                <hr>
-                <p>
-                  مدت زمان گارانتی: {{productinfo.Warrantyterms}}
-                </p>
-              </div>
+              <p>
+                <img src="{{imagUrl}}" alt="">
+              </p>
+              <p>
+                کد محصول : {{item.productid}}
+              </p>
+              <hr>
+              <p>
+                نام محصول : {{item.name}}
+              </p>
+              <hr>
+              <p>
+                مدل : {{item.modle}}
+              </p>
+              <hr>
+              <p>
+                رنگ : {{item.Color}}
+              </p>
+              <hr>
+              <p>
+                قیمت: {{item.price}}
+              </p>
+              <hr>
+              <p>
+                تخفیف: {{item.discount}}
+              </p>
+              <hr>
+              <p>
+                قیمت برای شما: {{item.priceforyou}}
+              </p>
+              <hr>
+              <p>
+                گارانتی: {{item.Warranty}}
+              </p>
+              <hr>
+              <p>
+                مدت زمان گارانتی: {{item.Warrantyterms}}
+              </p>
             </div>
             <div class="panel-footer">
               <button class="btn btn-success center-block">افزودن به سبد خرید</button>

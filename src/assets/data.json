@@ -1,45 +1,38 @@
 [
   {
-    "id": "01",
-    "groupname": "نمایشگرها",
-    "SubgroupA": [
-      {
-        "id": "02",
-        "name": "مانيتور ال جي",
-        "modle": "LG 22MP58VQ Monitor 21.5 Inch",
-        "Color": "مشکی",
-        "price": "600,000 هزار تومان",
-        "discount": "36 هزار تومان",
-        "priceforyou":"564,000 تومان",
-        "Warranty": "گارانتی مادیران",
-        "Warranty terms": "گارانتي 12 ماهه ماديران"
-      }
-    ],
-    "SubgroupB": [
-      {
-        "id": "02",
-        "name": "مانیتور JVC",
-        "modle": "JVC DT-V17G1 Monitor 17 Inch",
-        "Color": "مشکی",
-        "price": "36,000,000 هزار تومان",
-        "discount": "3.5 میلیون تومان",
-        "priceforyou":"هزار تومان 32,500,000",
-        "Warranty": " گارانتی داتیس بازار",
-        "Warranty terms": "گارانتی سه ماه داتیس بازار"
-      }
-    ],
-    "SubgroupC": [
-      {
-        "id": "03",
-        "name": "مانيتور سامسونگ",
-        "modle": "Samsung LS19F355HN Monitor 19 ",
-        "Color": " سفید-مشکی",
-        "price": "355,000 هزار تومان",
-        "discount": "18 هزار تومان",
-        "priceforyou": "337,000 تومان",
-        "Warranty": "گارانتی مادیران",
-        "Warrantyterms": "گارانتي 12 ماهه ماديران"
-      }
-    ]
+    "productid": "01",
+    "productname": "نمایشگرها",
+    "name": "مانيتور ال جي",
+    "modle": "LG 22MP58VQ Monitor 21.5 Inch",
+    "Color": "مشکی",
+    "price": "600,000 هزار تومان",
+    "discount": "36 هزار تومان",
+    "priceforyou": "564,000 تومان",
+    "Warranty": "گارانتی مادیران",
+    "Warrantyterms": "گارانتي 12 ماهه ماديران"
+  },
+  {
+    "productid": "02",
+    "productname": "نمایشگرها",
+    "name": "مانیتور JVC",
+    "modle": "JVC DT-V17G1 Monitor 17 Inch",
+    "Color": "مشکی",
+    "price": "36,000,000 هزار تومان",
+    "discount": "3.5 میلیون تومان",
+    "priceforyou": "هزار تومان 32,500,000",
+    "Warranty": " گارانتی داتیس بازار",
+    "Warrantyterms": "گارانتی سه ماه داتیس بازار"
+  },
+  {
+    "productid": "03",
+    "productname": "نمایشگرها",
+    "name": "مانيتور سامسونگ",
+    "modle": "Samsung LS19F355HN Monitor 19 ",
+    "Color": " سفید-مشکی",
+    "price": "355,000 هزار تومان",
+    "discount": "18 هزار تومان",
+    "priceforyou": "337,000 تومان",
+    "Warranty": "گارانتی مادیران",
+    "Warrantyterms": "گارانتي 12 ماهه ماديران"
   }
 ]

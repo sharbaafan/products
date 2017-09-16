@@ -9,7 +9,7 @@ import {ProductService} from '../shared/services/product.service';
 })
 export class ProductsComponent implements OnInit {
   imagUrl: string = 'http://lorempixel.com/100/100';
-  obj:any;
+  obj: any;
 
   constructor(private http: Http,
               public _currentproductServices: ProductService) {
