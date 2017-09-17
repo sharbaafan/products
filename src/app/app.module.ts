@@ -9,6 +9,7 @@ import {FormsModule} from '@angular/forms';
 import {HttpModule} from '@angular/http';
 import {ProductService} from './shared/services/product.service';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,8 @@ import {ProductService} from './shared/services/product.service';
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
