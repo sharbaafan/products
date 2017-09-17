@@ -2,6 +2,9 @@ import {Component, OnInit} from '@angular/core';
 import {Http, Response} from '@angular/http';
 import {ProductService} from '../shared/services/product.service';
 
+declare var $: any;
+declare var _: any;
+
 @Component({
   selector: 'app-products',
   templateUrl: './products.component.html',
@@ -23,5 +26,8 @@ export class ProductsComponent implements OnInit {
     this._currentproductServices.getData().subscribe((res) => {
       this.obj = res;
     });
+  }
+  get searchproductQuery() {
+    return this._currentproductServices.searchproductItem;
   }
 }

@@ -6,6 +6,7 @@ import 'rxjs/Rx';
 export class ProductService {
 
   private basePath: string;
+  searchproductItem = '';
 
   constructor(private http: Http) {
     this.basePath = '/assets/data.json';

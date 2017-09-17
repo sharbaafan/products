@@ -9,7 +9,10 @@
     "discount": "36 هزار تومان",
     "priceforyou": "564,000 تومان",
     "Warranty": "گارانتی مادیران",
-    "Warrantyterms": "گارانتي 12 ماهه ماديران"
+    "Warrantyterms": "گارانتي 12 ماهه ماديران",
+    "hdmiport":"Boolean",
+    "brandid":"1",
+    "productsavailable":"Boolean"
   },
   {
     "productid": "02",
@@ -21,7 +24,10 @@
     "discount": "3.5 میلیون تومان",
     "priceforyou": "هزار تومان 32,500,000",
     "Warranty": " گارانتی داتیس بازار",
-    "Warrantyterms": "گارانتی سه ماه داتیس بازار"
+    "Warrantyterms": "گارانتی سه ماه داتیس بازار",
+    "hdmiport":"Boolean",
+    "brandid":"3",
+    "productsavailable":"Boolean"
   },
   {
     "productid": "03",
@@ -33,6 +39,10 @@
     "discount": "18 هزار تومان",
     "priceforyou": "337,000 تومان",
     "Warranty": "گارانتی مادیران",
-    "Warrantyterms": "گارانتي 12 ماهه ماديران"
+    "Warrantyterms": "گارانتي 12 ماهه ماديران",
+    "hdmiport":"Boolean",
+    "brandid":"2",
+    "productsavailable":"Boolean"
   }
 ]
+

@@ -6,30 +6,20 @@
   <div class="container">
     <div class="row" style="background: border-box;border: 1px solid black">
       <div class="col-xs-12" style="background: burlywood;padding-top: 25px">
-        <div class="col-lg-4 co-xs-12">
-          <div class="panel">
-            <div class="panel-body"></div>
-          </div>
-        </div>
-        <div class="col-lg-4 co-xs-12">
+        <div class="col-lg-4 co-xs-12 col-lg-offset-8">
           <div class="panel">
             <div class="panel-body">
               <div class="form-group inout-fix input-with-icon-fix">
                 <label>جستجو : </label>
-                <!--<input type="text"-->
-                <!--class="form-control"-->
-                <!--maxlength="25"-->
-                <!--placeholder="جستجو در کالاها"-->
-                <!--[(ngModel)]="searchproductItem"-->
-                <!--name="productGroupListSearch"-->
-                <!--&gt;-->
+                <input type="text"
+                class="form-control"
+                maxlength="25"
+                placeholder="جستجو در کالاها"
+                [(ngModel)]="searchproductItem"
+                name="productGroupListSearch"
+                >
               </div><!-- /input-group -->
             </div>
-          </div>
-        </div>
-        <div class="col-lg-4 co-xs-12">
-          <div class="panel">
-            <div class="panel-body"></div>
           </div>
         </div>
       </div>
@@ -44,6 +34,7 @@
               <a>{{item.productname}}</a>
             </div>
             <div class="panel-body">
+
               <p>
                 <img src="{{imagUrl}}" alt="">
               </p>
@@ -71,6 +62,13 @@
                 تخفیف: {{item.discount}}
               </p>
               <hr>
+              <p *ngIf="item.hdmiport === true">
+                 HDMI: دارد
+              </p>
+              <p *ngIf="item.hdmiport !== true" class="text-danger">
+                HDMI: ندارد
+              </p>
+              <hr>
               <p>
                 قیمت برای شما: {{item.priceforyou}}
               </p>
@@ -92,17 +90,41 @@
       <div class="col-xs-2" style="background: gold;padding-top: 25px">
         <div class="col-lg-12">
           <div class="panel">
-            <div class="panel-body"></div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="panel">
-            <div class="panel-body"></div>
-          </div>
-        </div>
-        <div class="col-lg-12">
-          <div class="panel">
-            <div class="panel-body"></div>
+            <div class="panel-body">
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;کالا موجود
+                </label>
+              </div>
+              <hr>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;سامسونگ
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;ال جی
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;جی وی سی
+                </label>
+              </div>
+              <hr>
+              <label>پورت HDMI</label>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;دارد
+                </label>
+              </div>
+              <div class="checkbox">
+                <label>
+                  <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;ندارد
+                </label>
+              </div>
+            </div>
           </div>
         </div>
       </div>
