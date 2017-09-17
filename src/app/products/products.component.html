@@ -12,11 +12,11 @@
               <div class="form-group inout-fix input-with-icon-fix">
                 <label>جستجو : </label>
                 <input type="text"
-                class="form-control"
-                maxlength="25"
-                placeholder="جستجو در کالاها"
-                [(ngModel)]="searchproductItem"
-                name="productGroupListSearch"
+                       class="form-control"
+                       maxlength="25"
+                       placeholder="جستجو در کالاها"
+                       [(ngModel)]="searchproductItem"
+                       name="productGroupListSearch"
                 >
               </div><!-- /input-group -->
             </div>
@@ -63,7 +63,7 @@
               </p>
               <hr>
               <p *ngIf="item.hdmiport === true">
-                 HDMI: دارد
+                HDMI: دارد
               </p>
               <p *ngIf="item.hdmiport !== true" class="text-danger">
                 HDMI: ندارد
@@ -124,6 +124,18 @@
                   <input type="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;ندارد
                 </label>
               </div>
+              <hr>
+              <div class="checkbox">
+                <label>
+                  <input #HDMICheckBox
+                         id="HDMICheckBox"
+                         type="checkbox"
+                         [checked]="HDMICheck"
+                         (change)="HDMICheckBoxChanged(HDMICheckBox.checked)"
+                         data-toggle="toggle">&nbsp;&nbsp;&nbsp;&nbsp;Test
+                  <br>
+                </label
+                ></div>
             </div>
           </div>
         </div>

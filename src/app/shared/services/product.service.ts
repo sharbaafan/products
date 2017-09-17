@@ -15,5 +15,7 @@ export class ProductService {
   getData() {
     return this.http.get(this.basePath).map(r => r.json());
   }
+
+
 }
 
