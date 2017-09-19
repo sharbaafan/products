@@ -1,9 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {Http, Response} from '@angular/http';
+import {Http} from '@angular/http';
 import {ProductService} from '../shared/services/product.service';
-import {ifTrue} from "codelyzer/util/function";
-import {until} from "selenium-webdriver";
-import alertIsPresent = until.alertIsPresent;
+
 
 declare var $: any;
 declare var _: any;
@@ -28,17 +26,15 @@ export class ProductsComponent implements OnInit {
   }
 
   load() {
-    this._currentproductServices.getData().finally(()=> {
+    this._currentproductServices.getData().finally(() => {
       this.choesing(0);
     }).subscribe((res) => {
       this.obj = res;
     });
   }
-
   get searchproductQuery() {
     return this._currentproductServices.searchproductItem;
   }
-
   HDMICheckBoxChanged(value: boolean) {
     this.HDMICheck = value;
     if (this.HDMICheck === true) {
@@ -49,22 +45,21 @@ export class ProductsComponent implements OnInit {
       console.log('by');
     }
   }
-
   choesing(d: number) {
-
     if (d === 0) {
       this.filterload = this.obj;
     } else {
-      debugger;
       const filter = [];
+      // _.findIndex(this.filterload, function (r)  {
+      //   return r.productid === '1';
+      // });
       _.find(this.filterload, function (entry) {
-        debugger;
         console.log(entry);
         if (entry.productid === d) {
           filter.push({entry});
         }
       });
-      this.filterload.push(filter);
+      // this.filterload.push(filter);
     }
   }
 
