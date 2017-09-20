@@ -50,16 +50,13 @@ export class ProductsComponent implements OnInit {
       this.filterload = this.obj;
     } else {
       const filter = [];
-      // _.findIndex(this.filterload, function (r)  {
-      //   return r.productid === '1';
-      // });
       _.find(this.filterload, function (entry) {
         console.log(entry);
         if (entry.productid === d) {
           filter.push({entry});
         }
       });
-      // this.filterload.push(filter);
+      this.filterload.push(filter);
     }
   }
 
